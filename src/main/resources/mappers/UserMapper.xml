@@ -179,9 +179,9 @@
 
   <select id="checkAnswer" resultType="int" parameterType="map">
     SELECT
-    COUNT (1)
+    COUNT(1)
     FROM mmall_user
-    WHERE username = #{username }
+    WHERE username = #{username}
     AND question = #{question}
     AND answer = #{answer}
   </select>
@@ -194,7 +194,7 @@
   
   <select id="checkPassword" resultType="int" parameterType="map">
     SELECT
-    COUNT (1)
+    COUNT(1)
     FROM mmall_user
     WHERE password = #{password}
     AND id = #{userId}
