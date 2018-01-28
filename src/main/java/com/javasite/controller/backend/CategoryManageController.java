@@ -42,6 +42,8 @@ public class CategoryManageController {
         }
     }
 
+    @RequestMapping("set_category_name.do")
+    @ResponseBody
     public ServerResponse setCategoryName(HttpSession session, Integer categoryId, String categoryName) {
         User user = (User)session.getAttribute(Const.CURRENT_USER);
         if (user == null) {
