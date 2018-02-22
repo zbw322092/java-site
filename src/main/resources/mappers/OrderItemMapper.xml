@@ -188,7 +188,7 @@
       <foreach collection="orderItemList" index="index" item="item" separator=",">
         (
         #{item.id},#{item.orderNo},#{item.userId},#{item.productId},#{item.productName},#{item.productImage},
-        #{item.currentUnitPrice},#{item.quantity},#{item.totalPrice},#{item.id},#{item.id}, now(), now()
+        #{item.currentUnitPrice},#{item.quantity},#{item.totalPrice}, now(), now()
         )
       </foreach>
   </insert>
